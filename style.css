@@ -59,39 +59,66 @@ html, body {
   padding: 0;
 }
 
-
 .container {
-    display: grid;
-    grid-template-columns: 1fr 3fr ;
-    grid-template-rows: 1fr;
-     min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr;
+  min-height: 100vh;
+
 }
+
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.dashboard {
+  display: grid;
+  grid-column: 2/-1;
+}
+
+.dashboardHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+    grid-template-rows: 30% 1fr;
+}
+
+.headerInput {
+  grid-column: 1/2;
+}
+
+.headerHello {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.dashboardMain {
+  display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projectTitle {
+  grid-column: 1;
+}
+
+.dashboardProjects {
+  grid-column: 1;
+}
+
+.dashboardSideTitle {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.dashboardSide {
+  display: grid;
+}
+
+
 
 
 /* /////////////////////SIDEBAR////////////////////// */
 
-.sidebar {
-    background-color: #4988ff;
-    color: #ffffff;
-    
-
-}
-
-
-
- .navBox, .optionsBox {
-  margin-left: 20px;
-  margin-top: 15px;
-  font-weight: 600;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 10px;
-
-}
 
 .logoImg  {
     width: 15%;
@@ -101,39 +128,6 @@ html, body {
 
 }
 
-.logoText {
-
-}
-
-
-.nav {
-margin-top: 10%;
-
-}
-
-.navLink, .optionsLink {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 20px;
-
-
-
-}
-
-.navLink:visited {
-  color: #ffffff;
-
-
-
-}
-
-.navBox ,.optionsBox {
-    display: flex;
-}
-
-.options {
-  margin-top: 20%;
-}
 
 
 
@@ -156,22 +150,10 @@ margin-top: 10%;
 
 /* ///////DASHBOARD-HEADER////// */
   
-.dashboard {
 
-}
-
-
-.dashboardHeader {
- display: grid;
- grid-template-columns: 2fr 1fr ;
-    grid-template-rows: 2fr 1fr;
- 
-}
-
-.headerTop, .headerBottom {
-  display: flex;
-  grid-column: 1/3;
-
+.headerIcon {
+  width: 5%;
+  height: 12%;
 }
 
 
@@ -182,16 +164,40 @@ margin-top: 10%;
 
 
 
-.dashboardMain {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto;
-    
+
+
+.dashboardIcon {
+  width: 3%;
+  height: 3%;
 }
 
-.dashboardProjects {
-  grid-row: 1/2;
+.profilePic {
+    width: 10%;
+    height: 10%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
 }
+
+.profilePicSmall {
+      width: 5%;
+    height: 10%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

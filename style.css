@@ -57,11 +57,12 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: roboto;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 0.8fr 2fr 1fr;
+  grid-template-columns: 0.6fr 2fr 1fr;
   min-height: 100vh;
 
 }
@@ -69,32 +70,83 @@ html, body {
 
 .sidebar {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr minmax(0.6fr,1fr) 1fr;
+  background-color: #1892d5;
+  color: #ffff;
 }
+
+.logo {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.navBox,.optionsBox {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  align-items: center;
+}
+
+.navLink, .optionsLink {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+
+ 
+
 
 .dashboard {
   display: grid;
   grid-column: 2/-1;
+  grid-template-rows: 0fr 2fr;
 }
 
 .dashboardHeader {
   display: grid;
   grid-template-columns: 2fr 1fr;
-    grid-template-rows: 30% 1fr;
+    grid-template-rows: 0fr 0fr;
 }
 
 .headerInput {
   grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input {
+  width: 90%;
 }
 
 .headerHello {
   grid-column: 1/2;
   grid-row: 2/3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.headerButtons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headerProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dashboardMain {
   display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 0.7fr;
+    grid-template-rows: 10% 1fr;
+    background-color: #e2e8f0;
 }
 
 .projectTitle {
@@ -102,6 +154,7 @@ html, body {
 }
 
 .dashboardProjects {
+  display: grid;
   grid-column: 1;
 }
 
@@ -121,9 +174,9 @@ html, body {
 
 
 .logoImg  {
-    width: 15%;
-    height: 15%;
+    width: 90%;
   margin-right: 20px;  
+
    
 
 }
@@ -132,8 +185,10 @@ html, body {
 
 
 .navLinkLogo ,.optionsLinkLogo {
-    width: 8%;
-    height: 8%;
+    width: 90%;
+    height: 50%;
+    justify-self: center;
+    align-self: center;
    
 }
 
@@ -155,6 +210,7 @@ html, body {
   width: 5%;
   height: 12%;
 }
+
 
 
 
@@ -188,6 +244,16 @@ html, body {
 }
 
 
+
+
+
+.dashboardProjects {
+
+}
+
+.projectIcons {
+  display: flex;
+}
 
 
 
